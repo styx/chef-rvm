@@ -27,7 +27,7 @@
   },
   "recipes": {
     "rvm": "Install system-wide RVM",
-    "rvm::install": "Install a ruby implementation based on attributes",
+    "rvm::install": "Install a ruby implementation based on attributes"
   },
   "version": "0.0.1"
 }
