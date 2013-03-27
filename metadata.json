@@ -1,0 +1,33 @@
+{
+  "name": "rvm",
+  "description": "Installs and configures RVM, optionally keeping it updated.",
+  "long_description": "",
+  "maintainer": "Mikhail Pobolovets",
+  "maintainer_email": "styx.mp@gmail.com",
+  "license": "MIT",
+  "platforms": {
+  },
+  "dependencies": {
+    "apt": [],
+    "build-essential": []
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "rvm": "Install system-wide RVM",
+    "rvm::install": "Install a ruby implementation based on attributes",
+  },
+  "version": "0.0.1"
+}
