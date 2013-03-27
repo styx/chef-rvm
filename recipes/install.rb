@@ -22,7 +22,6 @@ bash "make #{ruby_version} the default ruby" do
   code "/usr/local/rvm/bin/rvm alias create default #{ruby_version}"
   not_if "/usr/local/rvm/bin/rvm list | grep '=> #{ruby_version}'"
   only_if { node[:rvm][:ruby][:default] }
-  notifies :run, resources(:execute => 'rvm-cleanup')
 end
 
 # set this for compatibilty with other people's recipes

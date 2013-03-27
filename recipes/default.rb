@@ -14,14 +14,6 @@ include_recipe 'build-essential'
   package pkg
 end
 
-# clean up rvm stuff
-# This is mostly to save inode space
-execute 'rvm-cleanup' do
-  user "root"
-  command "/usr/local/rvm/bin/rvm cleanup sources"
-  action :nothing
-end
-
 bash 'Installing system-wide RVM' do
   user 'root'
   code "curl -L get.rvm.io | sudo bash -s #{node[:rvm][:version]}; echo"
