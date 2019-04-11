@@ -1,2 +1,10 @@
 ---
 description: Устанавливает и настраивает RVM, при необходимости обновляя его.
+license: MIT
+maintainer: Mikhail Pobolovets
+maintainer_email: styx.mp@gmail.com
+name: rvm
+recipes:
+  rvm: Install system-wide RVM
+  rvm::install: Install a ruby implementation based on attributes
+version: 0.0.1
